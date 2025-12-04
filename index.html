@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" id="myForm">
+        <fieldset>
+            <legend>Registration</legend>
+            <h1>Registration Form</h1>
+            <br>
+            <label for="fname">First Name</label>
+            <input type="text" name="fname" id="fname" placeholder="First Name">
+            <span id="efname"></span>
+
+            <br><br>
+
+            <label for="lname">Last Name</label>
+            <input type="text" name="lname" id="lname" placeholder="Last Name">
+            <span id="elname"></span>
+
+            <br><br>
+
+            <label for="uname">Username</label>
+            <input type="text" name="uname" id="uname" placeholder="Enter username">
+            <span id="euname"></span>
+
+            <br><br>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Write your Email">
+            <span id="eemail"></span>
+
+            <br><br>
+
+            <label for="number">Phone Number</label>
+            <input type="text" name="number" id="number" placeholder="+880">
+            <span id="enumber"></span>
+
+            <br><br>
+
+            <label for="pass">Password</label>
+            <input type="password" name="pass" id="pass" placeholder="Enter Password">
+            <span id="epass"></span>
+
+            <br><br>
+
+            <label for="cpss">Confirm Password</label>
+            <input type="password" name="cpss" id="cpss" placeholder="Enter password again">
+            <span id="ecpass"></span>
+
+            <br><br>
+
+            <div id="gen">
+
+                <label>Gender:</label>
+                <input type="radio" name="gender" id="genderM" value="Male">
+                <label for="genderM">Male</label>
+
+                <input type="radio" name="gender" id="genderF" value="Female">
+                <label for="genderF">Female</label>
+
+                <input type="radio" name="gender" id="genderO" value="Other">
+                <label for="genderO">Other</label>
+
+                <span id="egender"></span>
+
+            </div>
+
+
+
+
+            <br><br>
+
+            <div class="city-container">
+
+                <label for="city">Select City</label>
+                <select name="selectcity" id="selectcity">
+                    <option value="">--Select a city--</option>
+                    <option value="Dhaka">Dhaka</option>
+                    <option value="Khulna">Khulna</option>
+                    <option value="Barishal">Barishal</option>
+                    <option value="Rajshahi">Rajshahi</option>
+                    <option value="Cummila">Cummila</option>
+                </select>
+                <span id="ecity"></span>
+
+            </div>
+
+            <br><br>
+
+            <label for="fcolor">Favourite Color</label>
+            <input type="color" name="fcolor" id="fcolor">
+            <span id="efcolor"></span>
+            <input type="button" value="select" onclick="colorset()">
+
+            <br><br>
+
+
+            <label for="rangee">Range: <span id="rangeValue">0</span></label>
+            <input type="range" name="rangee" id="rangee" min="0" max="100" value="0">
+            <br>
+            <span id="erangee">Choose Your Range</span>
+
+            <br><br>
+
+            
+                <label for="dob">Date of Birth:</label>
+                <input type="date" name="dob" id="dob">
+                <span id="edob"></span>
+            
+
+            <br><br>
+
+            <input type="submit" value="Submit" onclick="fun()">
+
+
+
+        </fieldset>
+    </form>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
